@@ -1,4 +1,5 @@
 // ! Utility Types
+// ? Mapped Types
 // ? Constraints
 // ? Key Remapping
 // ? Template Literals
@@ -12,6 +13,7 @@
 // ? Type Assertions
 // ? Satisfies
 // ? As Const
+// ? Const Modifier
 
 // ! Extra Credit
 // * Global scope
@@ -20,3 +22,4 @@
 // * Reverse Mapped Types
 
 export {};
+// 10:25
