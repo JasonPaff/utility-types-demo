@@ -1,6 +1,7 @@
 import { Button } from "./Button";
 import { useState } from "react";
 import "./App.css";
+import { BetterButton } from "./BetterButton";
 
 function App() {
   const [isSaving, setIsSaving] = useState(false);
@@ -12,13 +13,20 @@ function App() {
 
   return (
     <div className="flex min-h-screen w-full justify-center items-center bg-slate-800">
-      <Button
+      <BetterButton
         busyLabel={"Saving..."}
         disabled={isSaving}
         isBusy={isSaving}
         label={"Save Stuff"}
         onClick={onSave}
       />
+      {/*<Button*/}
+      {/*  busyLabel={"Saving..."}*/}
+      {/*  disabled={isSaving}*/}
+      {/*  isBusy={isSaving}*/}
+      {/*  label={"Save Stuff"}*/}
+      {/*  onClick={onSave}*/}
+      {/*/>*/}
     </div>
   );
 }

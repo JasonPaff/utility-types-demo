@@ -22,4 +22,3 @@
 // * Reverse Mapped Types
 
 export {};
-// 10:25

@@ -1,18 +1,19 @@
 import type { ButtonHTMLAttributes } from "react";
+import type { Dynamic } from "./utility-types";
 import clsx from "clsx";
 
-type JsxButtonProps = Omit<
-  ButtonHTMLAttributes<HTMLButtonElement>,
-  "className" | "children"
->;
-
-interface ButtonProps extends JsxButtonProps {
-  busyLabel?: string;
-  isBusy?: boolean;
+interface CommonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   label: string;
 }
 
-export const Button = ({
+interface BusyProps {
+  busyLabel: string;
+  isBusy: boolean;
+}
+
+type ButtonProps = CommonProps & Dynamic<BusyProps>;
+
+export const BetterButton = ({
   busyLabel,
   isBusy,
   label,
