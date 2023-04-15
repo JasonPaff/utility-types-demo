@@ -1,12 +1,7 @@
 import type { ButtonHTMLAttributes } from "react";
 import clsx from "clsx";
 
-type JsxButtonProps = Omit<
-  ButtonHTMLAttributes<HTMLButtonElement>,
-  "className" | "children"
->;
-
-interface ButtonProps extends JsxButtonProps {
+interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   busyLabel?: string;
   isBusy?: boolean;
   label: string;
