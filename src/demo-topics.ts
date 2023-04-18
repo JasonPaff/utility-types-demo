@@ -16,10 +16,9 @@
 // ? Const Modifier
 
 // ! Extra Credit
-// * Global scope
-// * Branded Types
-// * Identity Functions
-// * Reverse Mapped Types
+// ? Global scope
+// ? Branded Types
+// ? Identity Functions
+// ? Reverse Mapped Types
 
 export {};
-// 10:25
